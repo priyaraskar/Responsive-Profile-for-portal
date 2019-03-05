@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expert Mode Procedure Display</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
+
+
+</head>
+
+<body>
+    <a href="#" class="pageSuggestions" data-toggle="modal" data-target="#myModalsuggesion"><img src="images/icon-page-down.png" />
+    </a>
+
+    <div class="col-sm-12 headerBackground">
+        <div class="col-md-4 col-sm-4 col-xs-2 headerContent nopadding">
+            <div class="pull-left">
+                <a href="#"><img src="images/icon-home.png" />
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-8 nopadding">
+            <div>
+                <a href="#"><img class="brandImg" src="images/iqa-logo.png" alt="logo" />
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4  col-sm-4 nopadding user-info-popup">
+            <div class="pull-right">
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#"><span class="userName">Sven Kaiser</span></a>
+                            <ul>
+                                <li id="gearIcon">
+                                    <a href="#"><img src="images/icon-gear.png" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="profile-pic">
+                                        <img src="images/profile-img.png" />
+                                    </div>
+                                </li>
+                                <li><span>svenkaiser@iqa.com</span>
+                                </li>
+                                <li><span>Development</span>
+                                </li>
+                                <li><span>San Francisco, CA</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" id="logOut" data-toggle="modal" data-target="#myModaLogout"><img src="images/icon-logout.png" />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    
+<!--<div id="template-palet" class="col-md-12 col-sm-12">
+	<div class="col-md-3 col-sm-3">
+		<div class="sliderDiv div1">
+		<span>SOP TEMPLATE DETAILS</span>
+		<h4>1</h4>
+		</div>
+		<div class="clearfix"></div>
+
+	</div>
+	<div class="col-md-3 col-sm-3">
+		<div class="sliderDiv div2">		
+			<span>SOP TEMPLATE DETAILS</span>
+			<h4>2</h4>
+		</div>
+		<div class="clearfix"></div>
+
+	</div>
+	<div class="col-md-3 col-sm-3">
+		<div class="sliderDiv div1">
+		<span>SOP TEMPLATE DETAILS</span>
+		<h4>3</h4>
+		</div>
+		<div class="clearfix"></div>
+
+	</div>
+	<div class="col-md-3 col-sm-3">
+		<div class="sliderDiv div1">
+		<span>SOP TEMPLATE DETAILS</span>
+		<h4>4</h4>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+<div class="TemplateDetailsLink" class="pull-right" data-toggle="tooltip" data-placement="left" title="Click to Toggle Templates">
+		<a href="#" id="TemplateImg" ><img  src="images/icon-templates.png" /></a>
+</div>-->
+
+<div class="col-sm-12 assignedHeader mainHeader">
+    <div class="col-md-4 col-sm-4 col-xs-12"><img class="pull-left" src="images/arrowBack.png"/><span class="pull-left">Review Presciption Form</span>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-12">
+        <a href="#"><img src="images/menu-icon.png" />
+        </a>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-12">
+        
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="col-sm-12" >
+	<div class="toggle-bar"><img src="images/navicon_1.png"/>
+	</div>
+</div>
+<div class="clearfix"></div>
+
+
+
+<div class="main-wrapper full">
+
+        <div class="col-md-12 col-sm-12 backgroundimg">
+
+            
+            <div class="col-md-12 col-sm-12">
+
+                <div class="profile-upload margin-top-10">
+                	<div class="expert-mode-processName"><span>Process #1</span></div>
+                            <div class="form-group" ><!--id="revie-form-contet"-->
+                            	<div class="table-rersponsive">
+	                            <table class="table table-striped">
+							        <thead class="table-head">
+							          <tr class="table-row">
+							            <th width="50px">Step #</th>
+							            <th width="217px">Step</th>
+							            <th width="70px">Answer Type</th>
+							            <th width="120px">Answer</th>
+							            <th width="217px">Instructions / Additional Information</th>
+							          </tr>
+							        </thead>
+							        <tbody>
+							          <tr>
+							            <td>2.1</td>
+							            <td>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac</td>
+							            <td>Yes / No</td>
+							            <td>
+								            <select class="form-control">
+				                                <option value="volvo">Yes</option>
+				                                <option value="saab">Saab</option>
+				                                <option value="opel">Opel</option>
+				                                <option value="audi">Audi</option>
+				                                <option value="volvo">Volvo</option>
+	                            			</select>
+                            			</td>
+							            
+							            <td>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+							            </td>
+							          </tr>
+							          <tr>
+							            <td>2.2</td>
+							            <td>If child, check age or date of birth specified.Pellentesque habitant morbi tristique senectus </td>
+							            <td>Yes / No</td>
+							            <td>
+							                <select class="form-control">
+				                                <option value="volvo">Yes</option>
+				                                <option value="saab">Saab</option>
+				                                <option value="opel">Opel</option>
+				                                <option value="audi">Audi</option>
+				                                <option value="volvo">Volvo</option>
+	                            			</select>
+							            </td>
+							            
+							            <td>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas..
+										</td>
+							          </tr>
+							          <tr>
+							            <td>2.3</td>
+							            <td>If child, check age or date of birth specified.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac</td>
+							            <td>Yes / No</td>
+							            <td>
+							            	<select class="form-control">
+				                                <option value="volvo">Yes</option>
+				                                <option value="saab">Saab</option>
+				                                <option value="opel">Opel</option>
+				                                <option value="audi">Audi</option>
+				                                <option value="volvo">Volvo</option>
+	                            			</select>
+							            </td>
+							            
+							            <td>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. .
+										</td>
+							          </tr>
+							          <tr>
+							            <td>2.1</td>
+							            <td>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+										</td>
+										 <td>Yes / No</td>
+							            <td>
+								            <select class="form-control">
+				                                <option value="volvo">Yes</option>
+				                                <option value="saab">Saab</option>
+				                                <option value="opel">Opel</option>
+				                                <option value="audi">Audi</option>
+				                                <option value="volvo">Volvo</option>
+	                            			</select>
+                            			</td>
+							           
+							            <td>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac .
+										</td>
+							          </tr>
+							          <tr>
+							            <td>2.1</td>
+							            <td>Check name and address</td>
+							             <td>Yes / No</td>
+							            <td>
+								            <select class="form-control">
+				                                <option value="volvo">Yes</option>
+				                                <option value="saab">Saab</option>
+				                                <option value="opel">Opel</option>
+				                                <option value="audi">Audi</option>
+				                                <option value="volvo">Volvo</option>
+	                            			</select>
+                            			</td>
+							           
+							            <td>Pellentesque habitant morbi tristique senectus et netus et malesuada .
+										</td>
+							          </tr>
+
+
+							        </tbody>
+							      </table> 
+							      </div>                           
+							</div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+            
+            <div class="col-md-12 col-sm-12">
+				<div class="stop-button">
+					<button type="button" class="btn btn-delete">STOP</button>
+				</div>
+                <div class="clearfix"></div>
+            </div>
+
+
+            
+
+            <div class="clearfix"></div>
+        </div>
+
+
+</div>
+
+
+    <!-- Modal popup Suggestions -->
+    <div id="myModalsuggesion" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Suggestions</h4>
+                </div>
+                <div class="modal-body">
+                    <textarea class="form-control" placeholder="Enter Suggestions Here..." rows="8" id="comment"></textarea>
+                    <!--<p>Do you want to save changes you made to document before closing?</p>
+				                <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default popupButton" data-dismiss="modal">CANCEL</button>
+                    <button type="button" class="btn btn-primary popupButton">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal popup end -->
+
+    <!-- Modal popup logout -->
+    <div id="myModaLogout" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Logout</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to logout ?</p>
+                    <!--<p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">NO</button>
+                    <button type="button" class="btn btn-primary">YES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal popup end -->
+
+
+
+</body>
+
+</html>
